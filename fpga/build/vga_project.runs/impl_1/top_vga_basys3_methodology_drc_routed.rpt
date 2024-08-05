@@ -1,0 +1,181 @@
+Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2021.2 (lin64) Build 3367213 Tue Oct 19 02:47:39 MDT 2021
+| Date         : Sat Jul 13 19:17:24 2024
+| Host         : cadence30 running 64-bit CentOS Linux release 7.9.2009 (Core)
+| Command      : report_methodology -file top_vga_basys3_methodology_drc_routed.rpt -pb top_vga_basys3_methodology_drc_routed.pb -rpx top_vga_basys3_methodology_drc_routed.rpx
+| Design       : top_vga_basys3
+| Device       : xc7a35tcpg236-1
+| Speed File   : -1
+| Design State : Fully Routed
+--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Report Methodology
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+             Max violations: <unlimited>
+             Violations found: 29
++-----------+----------+-------------------------------+------------+
+| Rule      | Severity | Description                   | Violations |
++-----------+----------+-------------------------------+------------+
+| TIMING-18 | Warning  | Missing input or output delay | 3          |
+| TIMING-20 | Warning  | Non-clocked latch             | 26         |
++-----------+----------+-------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+TIMING-18#1 Warning
+Missing input or output delay  
+An input delay is missing on PS2Clk relative to clock(s) clk
+Related violations: <none>
+
+TIMING-18#2 Warning
+Missing input or output delay  
+An input delay is missing on PS2Data relative to clock(s) clk
+Related violations: <none>
+
+TIMING-18#3 Warning
+Missing input or output delay  
+An input delay is missing on btnC relative to clock(s) clk
+Related violations: <none>
+
+TIMING-20#1 Warning
+Non-clocked latch  
+The latch u_top_vga/u_draw_obstacle_ctl/xpos_nxt_reg[0] cannot be properly analyzed as its control pin u_top_vga/u_draw_obstacle_ctl/xpos_nxt_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#2 Warning
+Non-clocked latch  
+The latch u_top_vga/u_draw_obstacle_ctl/xpos_nxt_reg[10] cannot be properly analyzed as its control pin u_top_vga/u_draw_obstacle_ctl/xpos_nxt_reg[10]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#3 Warning
+Non-clocked latch  
+The latch u_top_vga/u_draw_obstacle_ctl/xpos_nxt_reg[1] cannot be properly analyzed as its control pin u_top_vga/u_draw_obstacle_ctl/xpos_nxt_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#4 Warning
+Non-clocked latch  
+The latch u_top_vga/u_draw_obstacle_ctl/xpos_nxt_reg[2] cannot be properly analyzed as its control pin u_top_vga/u_draw_obstacle_ctl/xpos_nxt_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#5 Warning
+Non-clocked latch  
+The latch u_top_vga/u_draw_obstacle_ctl/xpos_nxt_reg[3] cannot be properly analyzed as its control pin u_top_vga/u_draw_obstacle_ctl/xpos_nxt_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#6 Warning
+Non-clocked latch  
+The latch u_top_vga/u_draw_obstacle_ctl/xpos_nxt_reg[4] cannot be properly analyzed as its control pin u_top_vga/u_draw_obstacle_ctl/xpos_nxt_reg[4]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#7 Warning
+Non-clocked latch  
+The latch u_top_vga/u_draw_obstacle_ctl/xpos_nxt_reg[5] cannot be properly analyzed as its control pin u_top_vga/u_draw_obstacle_ctl/xpos_nxt_reg[5]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#8 Warning
+Non-clocked latch  
+The latch u_top_vga/u_draw_obstacle_ctl/xpos_nxt_reg[6] cannot be properly analyzed as its control pin u_top_vga/u_draw_obstacle_ctl/xpos_nxt_reg[6]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#9 Warning
+Non-clocked latch  
+The latch u_top_vga/u_draw_obstacle_ctl/xpos_nxt_reg[7] cannot be properly analyzed as its control pin u_top_vga/u_draw_obstacle_ctl/xpos_nxt_reg[7]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#10 Warning
+Non-clocked latch  
+The latch u_top_vga/u_draw_obstacle_ctl/xpos_nxt_reg[8] cannot be properly analyzed as its control pin u_top_vga/u_draw_obstacle_ctl/xpos_nxt_reg[8]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#11 Warning
+Non-clocked latch  
+The latch u_top_vga/u_draw_obstacle_ctl/xpos_nxt_reg[9] cannot be properly analyzed as its control pin u_top_vga/u_draw_obstacle_ctl/xpos_nxt_reg[9]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#12 Warning
+Non-clocked latch  
+The latch u_top_vga/u_draw_rect_ctl/FSM_onehot_state_nxt_reg[0] cannot be properly analyzed as its control pin u_top_vga/u_draw_rect_ctl/FSM_onehot_state_nxt_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#13 Warning
+Non-clocked latch  
+The latch u_top_vga/u_draw_rect_ctl/FSM_onehot_state_nxt_reg[1] cannot be properly analyzed as its control pin u_top_vga/u_draw_rect_ctl/FSM_onehot_state_nxt_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#14 Warning
+Non-clocked latch  
+The latch u_top_vga/u_draw_rect_ctl/FSM_onehot_state_nxt_reg[2] cannot be properly analyzed as its control pin u_top_vga/u_draw_rect_ctl/FSM_onehot_state_nxt_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#15 Warning
+Non-clocked latch  
+The latch u_top_vga/u_draw_rect_ctl/stop_reg cannot be properly analyzed as its control pin u_top_vga/u_draw_rect_ctl/stop_reg/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#16 Warning
+Non-clocked latch  
+The latch u_top_vga/u_draw_rect_ctl/ypos_nxt_reg[0] cannot be properly analyzed as its control pin u_top_vga/u_draw_rect_ctl/ypos_nxt_reg[0]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#17 Warning
+Non-clocked latch  
+The latch u_top_vga/u_draw_rect_ctl/ypos_nxt_reg[10] cannot be properly analyzed as its control pin u_top_vga/u_draw_rect_ctl/ypos_nxt_reg[10]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#18 Warning
+Non-clocked latch  
+The latch u_top_vga/u_draw_rect_ctl/ypos_nxt_reg[1] cannot be properly analyzed as its control pin u_top_vga/u_draw_rect_ctl/ypos_nxt_reg[1]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#19 Warning
+Non-clocked latch  
+The latch u_top_vga/u_draw_rect_ctl/ypos_nxt_reg[2] cannot be properly analyzed as its control pin u_top_vga/u_draw_rect_ctl/ypos_nxt_reg[2]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#20 Warning
+Non-clocked latch  
+The latch u_top_vga/u_draw_rect_ctl/ypos_nxt_reg[3] cannot be properly analyzed as its control pin u_top_vga/u_draw_rect_ctl/ypos_nxt_reg[3]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#21 Warning
+Non-clocked latch  
+The latch u_top_vga/u_draw_rect_ctl/ypos_nxt_reg[4] cannot be properly analyzed as its control pin u_top_vga/u_draw_rect_ctl/ypos_nxt_reg[4]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#22 Warning
+Non-clocked latch  
+The latch u_top_vga/u_draw_rect_ctl/ypos_nxt_reg[5] cannot be properly analyzed as its control pin u_top_vga/u_draw_rect_ctl/ypos_nxt_reg[5]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#23 Warning
+Non-clocked latch  
+The latch u_top_vga/u_draw_rect_ctl/ypos_nxt_reg[6] cannot be properly analyzed as its control pin u_top_vga/u_draw_rect_ctl/ypos_nxt_reg[6]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#24 Warning
+Non-clocked latch  
+The latch u_top_vga/u_draw_rect_ctl/ypos_nxt_reg[7] cannot be properly analyzed as its control pin u_top_vga/u_draw_rect_ctl/ypos_nxt_reg[7]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#25 Warning
+Non-clocked latch  
+The latch u_top_vga/u_draw_rect_ctl/ypos_nxt_reg[8] cannot be properly analyzed as its control pin u_top_vga/u_draw_rect_ctl/ypos_nxt_reg[8]/G is not reached by a timing clock
+Related violations: <none>
+
+TIMING-20#26 Warning
+Non-clocked latch  
+The latch u_top_vga/u_draw_rect_ctl/ypos_nxt_reg[9] cannot be properly analyzed as its control pin u_top_vga/u_draw_rect_ctl/ypos_nxt_reg[9]/G is not reached by a timing clock
+Related violations: <none>
+
+
