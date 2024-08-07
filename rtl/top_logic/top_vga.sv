@@ -43,6 +43,9 @@
  import vga_pkg::*;
  wire [11:0] xpos_d; //mouse_xpos_sync
  wire [11:0] ypos_d;
+
+ wire [11:0] xpos; 
+ wire [11:0] ypos; 
  
  wire [11:0] pixel_address;
  wire [11:0] pixel_rgb;
@@ -135,6 +138,8 @@
  draw_mouse u_draw_mouse (
      .clk40MHz(clk40MHz),
      .rst,
+     .xpos(xpos),
+     .ypos(ypos),
      //.xpos(x_y_pos_dummy),
      //.ypos(x_y_pos_dummy),
      .in(dfont_dmouse_if),
@@ -144,7 +149,7 @@
 
  draw_rect_ctl u_draw_rect_ctl(
      .clk(clk100MHz),
-     .rst_n(dummy[0]),
+     .rst_n(rst),
      .ypos(rect_ctl_ypos),
      .endgame(endgame),
      .left(left_sync),
@@ -153,7 +158,7 @@
  
  draw_obstacle_ctl u_draw_obstacle_ctl(
      .clk(clk40MHz),
-     .rst_n(dummy[0]),
+     .rst_n(rst),
      .endgame(endgame2),
      .y_from_draw_rect(rect_ctl_ypos),
      .obstacle_ypos_1(obstacle_ctl_ypos_1),

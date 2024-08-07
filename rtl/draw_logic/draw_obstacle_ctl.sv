@@ -31,7 +31,7 @@ logic [24:0] cycle_counter; // Licznik cykli zegara dla 0.25 sekundy
 always_ff @(posedge clk) begin
     if (rst) begin
         state <= IDLE;
-        obstacle_xpos_1 <= 12'b0;
+        obstacle_xpos_1 <= 750;
         cycle_counter <= 0; // Reset licznika cykli zegara
         //endgame <= 0;
     end else begin
