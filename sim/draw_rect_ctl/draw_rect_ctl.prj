@@ -1,0 +1,26 @@
+sv work ../../rtl/vga_pkg.sv \
+        ../../rtl/vga_timing.sv \
+        ../../rtl/draw_bg.sv \
+        ../../rtl/draw_rect.sv \
+        ../../rtl/top_vga.sv \
+        ../../rtl/vga_if.sv \
+        ../../rtl/draw_mouse.sv \
+        ../../rtl/counter.sv \
+        ../../rtl/draw_rect_ctl.sv \
+        ../../fpga/rtl/top_vga_basys3.sv \
+        ../common/tiff_writer.sv \
+        ../../rtl/draw_obstacle.sv \
+        ../../rtl/draw_obstacle_ctl.sv \
+        ../../rtl/draw_rect_char.sv \
+        ./../rtl/char_rom_16x16.sv \
+        draw_rect_ctl_tb.sv
+
+vhdl work ../../rtl/MouseCtl.vhd \
+        ../../rtl/MouseDisplay.vhd \
+        ../../fpga/rtl/Ps2Interface.vhd 
+
+verilog work ../common/glbl.v \
+         ../../fpga/rtl/clk_wiz_0.v \
+        ../../fpga/rtl/clk_wiz_0_clk_wiz.v 
+        ../../rtl/font_rom.v \
+
